@@ -16,11 +16,20 @@ object baigorria {
 		cantidadEmpanadasVendidas += 1
 	}
  	
-	method sueldo() = cantidadEmpanadasVendidas * montoPorEmpanada
+	method sueldo() = cantidadEmpanadasVendidas * montoPorEmpanada //es lo mismo que hacer un {return}
 }
-
+//Dueño
 object gimenez {
 	var dinero = 300000
 	method dinero() { return dinero }
 	method pagarA( empleado ) { dinero -= empleado.sueldo() }
 }
+
+
+//1-si quiero agregar un nuevo empleado que metodo le tengo que poner para que gimenez le pueda pagar
+//sueldo
+
+//2-donde aparece el polimorfismo. o sea: que objetos son polimorficos para que otro objeto?
+//los empleados son polimorficos para el dueño. el dueño trata polimorficamente a todos los empleados.
+
+Si pongo el nombre del objeto me muestra la memoria del objeto, en este caso... si pongo en consola gimenez me muestra la variable dinero
