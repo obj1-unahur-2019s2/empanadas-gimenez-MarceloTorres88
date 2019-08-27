@@ -14,7 +14,7 @@ object galvan {
 		return resultado.min(0)
 	}
 	method totalDinero(){
-		return resultado.max(0)
+		return resultado.max(0)//lo mismo se puede hacer con if
 		
 	}
 	
