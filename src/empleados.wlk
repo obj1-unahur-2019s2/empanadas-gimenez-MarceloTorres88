@@ -11,20 +11,11 @@ object galvan {
 	resultado-=cuanto
 	}
 	method totalDeuda(){
-		if (resultado<0){
-			return resultado
-		}
-		else{
-			return 0
-		}
+		return resultado.min(0)
 	}
 	method totalDinero(){
-		if (resultado>0){
-			return resultado
-		}
-		else{
-			return 0
-		}
+		return resultado.max(0)
+		
 	}
 	
 }
